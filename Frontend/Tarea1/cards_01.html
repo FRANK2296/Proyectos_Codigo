@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cards_01.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
     <title>Document</title>
 </head>
 <body>
+    <header class="header">
+        <img src="./img/falabella.png" alt="">
+    </header>
+    <section class="title">
+        ...lo mejor de sagafalabella!!!
+    </section>
     <section class="card">
         <!--inicio de Imagen-->
         <div class="card__img">
             <!--contenedor para sacar la imagen-->
-            <div>
-                <div>
-                    <img src="./Trabajo1/img/manzana/manzana.png" alt="">
+            <div class="imgcontenedor">
+                <div class="imgprincipal">
+                    <div class="iconos">
+                        <i class="fas fa-share"></i> 
+                        <i class="fas fa-heart"></i>                                               
+                    </div>
+                    <img src="./img/manzana.png" alt="">
                 </div>
-                <div>
+                <div class="imgseleccion">
                     <ul>
-                        <li><img src="./Trabajo1/img/manzana/manza_fase1_1.png" alt=""></li>
-                        <li><img src="./Trabajo1/img/manzana/manza_fase1_2.png" alt=""></li>
-                        <li><img src="./Trabajo1/img/manzana/manza_fase1_3.png" alt=""></li>
-                        <li><img src="./Trabajo1/img/manzana/manza_fase1_4.png" alt=""></li>
+                        <li><img src="./img/manza_fase1_1.png" alt=""></li>
+                        <li><img src="./img/manza_fase1_2.png" alt=""></li>
+                        <li><img src="./img/manza_fase1_3.png" alt=""></li>
+                        <li><img src="./img/manza_fase1_4.png" alt=""></li>
                     </ul>
 
                 </div>
@@ -27,13 +38,47 @@
             </div>            
         </div>
         <!--Término de imagen-->
+
         <!--Inicio de información-->
         <div class="card__info">
+            <div class="titulo">
+                <h1>Manzanas Deliciosas</h1>
+                <span>Cod: 00521</span>                
+            </div>
+            <div class="precio">
+                S/. <span>4.99</span>
+            </div>
+            <div class="h1 variedad">
+                <h3>Escoger variedad</h3>
+                <ul>
+                    <li><img src="./img/manza_fase2_1.png" alt=""></li>
+                    <li><img src="./img/manza_fase2_2.png" alt=""></li>
+                    <li><img src="./img/manza_fase2_3.png" alt=""></li>
+                    <li><img src="./img/manza_fase2_4.png" alt=""></li>
+                </ul>
+
+            </div>
+            <div class="descripcion">
+                <h3>Beneficios</h3>
+                <ul>
+                    <li>Son nutritivas</li>
+                    <li>Ayudan a reducir peso</li>
+                    <li>Fortalecen los huesos</li>
+                    <li>Reduce la Diabetes</li>
+                </ul>
+
+            </div>
+            <button class="botonagregar">
+                AGREGAR A COMPRAS
+            </button>
 
         </div>
         <!--Término de información-->
 
     </section>
+    <footer class="pie">
+       <small> &copy; Creado by Franklin</small>
+    </footer>
     
 </body>
 </html>
