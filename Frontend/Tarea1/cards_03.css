@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  height: 120px;
+  background: -webkit-linear-gradient(left, #94c1eb, #1c2b53); 
+}
+header img{
+  width: 160px;
+  height: 110px;
+}
+
+h1 {
+  color: #444;
+  text-align: center;
+  margin: 40px 0;
+}
+.cards {
+  padding: 0 50px 50px 50px;
+  text-align: center;
+}
+.card {
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 20px;
+  text-align: left;
+}
+.card,
+.card * {
+  transition: all 0.2s ease;
+}
+.card__imagen {
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+}
+.card__imagen img {
+  width: 100%;
+  transform: translate(0, -10px);
+  margin-top: 10px;
+}
+.card__info {
+  padding: 20px;  
+  position: relative;
+  height: 20%;
+}
+.card:hover .card__imagen {
+  height:50%;
+}
+.card:hover .card__imagen img {
+   filter: brightness(0.5) ;
+}
+.card:hover .card__info {
+  height: 20%;
+}
+.card:hover {
+  box-shadow: #bbb 0px 0px 20px;
+  transform: scale(1.05);  
+}
+
+.contenedorinfo .polo_nombre{
+	font-size:22px;
+	color:#393c45;	
+}
+.contenedorinfo p{
+	font-size:16px;
+	color:#b1b1b3;	
+	padding:2px 0 20px 0;
+}
+.contenedorinfo .polo_precio{
+	float:right;
+	color:#48cfad;
+	font-size:22px;
+	font-weight:600;
+}
+
+.opciones{
+	padding:2px 0 0;
+}
+.opciones strong{
+	font-weight:700;
+	color:#393c45;
+  font-size:14px;
+  text-align: left;
+}
+.opciones span{	
+	color:#969699;
+	font-size:14px;
+	display:block;
+	margin-bottom:8px;
+}
+.color div{
+	margin-top:3px;
+	width:15px; 
+	height:15px; 	
+	margin-right:5px;
+	float:left;
+}
+.color div span{
+	width:15px; 
+	height:15px; 
+	display:block;
+	border-radius:50%;
+}
+.color div span:hover{
+	width:17px;
+	height:17px;
+	margin:-1px 0 0 -1px;
+}
+div.azul span{background:#6e8cd5;}
+div.rojo span{background:#f56060;}
+div.verde span{background:#44c28d;}
+div.blanco span{
+	background:#fff;
+	width:14px;
+	height:14px; 
+	border:1px solid #080808;
+}
+.detalles{
+  position:absolute;
+	top:258px;
+	left:50%;
+	margin-left:-85px;	
+	border:2px solid #fff;
+	color:#fff;
+	font-size:19px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:700;
+	padding:10px 0;
+	width:172px;	
+	opacity:1;
+
+}
